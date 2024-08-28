@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+.container{
+background-color: blue;
+color: black;
+margin: auto;
+width: 50%;
+padding: 30px;
+background: lightgray;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1 data-th-text="${name}">Home Page...</h1>
+<p>YouTube channel: <span data-th-text="${youtube}"></span></p>
+<p>GitHublink: <span data-th-text="${github}"></span></p>
+<a th:href="${github}">Click here to open link</a>
+ <p class="text-white-600">Lorem, ipsum dolor sit amet consectetur
+  adipisicing elit. Eius nobis facere sit quae!
+   Eos eveniet rem eaque, earum, corrupti voluptatum 
+   asperiores dolor placeat magnam, necessitatibus esse a ipsam beatae minima!</p>
+   </div>
+</body>
+</html>
